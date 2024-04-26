@@ -33,6 +33,11 @@ contract ValueType{
     address payable _address2 = payable(_address1); //可以转账和查余额
     uint public _balance = _address2.balance;
 
+    //定长字节组
+    //bytes1,bytes8,bytes32，最多存储32位字节，属于值类型，定义后数组长度不可变。
+    bytes32 public _bytes = "Hello World.";
+    bytes1 public _byte = _bytes[0];
+
     
 
     
